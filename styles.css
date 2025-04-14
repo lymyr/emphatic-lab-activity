@@ -1,0 +1,113 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.chat-box {
+    height:540px;
+    width:90vw;
+    max-width: 920px;
+    margin-bottom: 12px;
+    border-style: double;
+    display:flex;
+    flex-direction: column;
+    overflow: scroll;
+}
+
+.chat-input, .chat-output {
+    margin: 0px;
+    max-width:306px;
+    width: fit-content;
+    text-wrap: wrap;
+    word-wrap: break-word;
+    padding:12px;
+    margin: 12px 0px 12px 0px;
+    border-radius: 16px;
+}
+
+.chat-input {
+    align-self: flex-end;
+    text-align: right;
+    margin-right: 8px;
+    border-bottom-right-radius: 0px;
+    background-color: rgb(184, 211, 255);
+}
+
+.chat-output {
+    margin-left: 8px;
+    border-bottom-left-radius: 0px;
+    border-style: solid;
+    border-color: rgb(178, 178, 178);
+    border-width: 1px;
+    background-color: white;
+    
+}
+.input-section {
+    width:90vw;
+    max-width: 920px;
+    display:flex;
+}
+.input-section input {
+    flex-grow: 1;
+    margin-right: 8px;
+    padding:8px;
+}
+
+.input-section button {
+    padding: 8px 16px;
+    background-color: rgb(80, 150, 255);
+    color:white;
+    border-style:none;
+    font-weight: bold;
+}
+
+.input-section button:hover {
+    transition: 120ms;
+    cursor: pointer;
+    background-color: rgb(117, 172, 255);
+}
+
+.members-container {
+    margin-top: 24px;
+    padding:12px;
+    width:90vw;
+    max-width: 920px;
+    display: flex;
+    flex-direction: column;
+}
+
+.members-container > * {
+    margin:0px;
+    padding:0px;
+}
+
+.members-container h2 {
+    margin-bottom: 8px;
+}
+
+ul {
+    list-style: none;
+    display:flex;
+    text-align: center;
+    gap:12px;
+}
+
+li {
+    padding: 8px 16px;
+    background-color: rgb(255, 206, 206);
+    border-radius: 8px;
+    display:flex;
+    flex:1;
+    justify-content: center;
+}
+
+li:nth-child(1) {
+    background-color: rgb(208, 255, 208);
+}
+
+li:nth-child(2) {
+    background-color: rgb(206, 213, 255);
+}
